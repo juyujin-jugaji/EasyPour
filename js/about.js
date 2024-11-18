@@ -6,25 +6,15 @@ var swiper = new Swiper('.title ', {
   mousewheel: true,
   watchOverflow : true,
   on: {
-      slideChange: function() {
-          setTimeout(function () {
-            swiper.params.touchReleaseOnEdges = false;  
-            swiper.params.mousewheel.releaseOnEdges = false;
-          });
-      },
-      reachEnd: function() {
-          setTimeout(function () {
-              swiper.params.touchReleaseOnEdges = true;
-              swiper.params.mousewheel.releaseOnEdges = true;
-          }, 500);
-      },
-      reachBeginning: function() {
-          setTimeout(function () {
-              swiper.params.touchReleaseOnEdges = true;
-              swiper.params.mousewheel.releaseOnEdges = true;
-          }, 500);
-      }
+    reachEnd: function () {
+      swiper.mousewheel.disable();
+    }
   }
+});
+window.addEventListener('wheel', function (event) {
+  if (event.deltaY < 0) {
+    swiper.mousewheel.enable();
+  } else if (event.deltaY > 0) {}
 });
 
 
