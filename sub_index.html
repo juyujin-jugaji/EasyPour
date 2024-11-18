@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>EASY POUR 구독하기</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- 내 css -->
+    <link rel="stylesheet" href="./css/sub.css">
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+    <link href="./images/icon/icon.png" rel="icon" type="image/png" sizes="32x32">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="./start_index.html" class="logo"><img src="./images/logo_main.png" alt="logo"></a>
+            <ul>
+                <li class="white"><a href="./index.html">HOME</a></li>
+                <li class="white"><a href="./login_index.html">Login</a></li>
+                <li class="ham-btn">
+                    <a class="menu-trigger" href="#">
+                        <!-- 햄버거 메뉴 -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- (햄버거)네비 -->
+    <div class="ham-con">
+        <ul class="ham-sub-menu">
+            <li>
+                <form class="search-box" action="." method="get">
+                    <input class="search-txt" type="text" placeholder="키워드를 입력하세요.  #오늘의 커피  #머그컵 #원데이 클래스 # 선물세트">
+                    <button class="search-btn" type="submit">
+                        <img src="./images/search.png" alt="search">
+                    </button>
+                </form>
+            </li>
+            <li class="star"><a href="./about_index.html">About.EP</a></li>
+            <li class="star"><a href="./index.html">Home</a></li>
+            <li class="star"><a href="./sub_index.html">EP 구독</a></li>
+            <li class="star"><a href="./shop_index.html">Shop</a></li>
+            <li class="star"><a href="./program_index.html">Program</a></li>
+        </ul>
+    </div>
+
+    <!-- 배너 -->
+    <div class="bn_bg">
+        <div class="bn">
+            <div class="bn_text">
+                <a href="./shop_index.html"><img src="./images/sub/go.shop.png" alt="">이지푸어 샵 바로가기</a>
+                <h2>내 취향대로 만드는<br>스페셜티 커스텀 원두</h2>
+                <h2>이지푸어로<br>현명한 커피라이프 시작</h2>
+                <ul class="bn_ul">
+                    <li><a href="#">ABOUT US</a></li>
+                    <li class="border"><a href="#">PROGRAM</a></li>
+
+                </ul>
+            </div>
+            <div class="swiper bn_slide">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide"><img src="./images/sub/bn_ethiopia.png" alt="갤러리1"></div>
+                    <div class="swiper-slide"><img src="./images/sub/bn_blending.png" alt="갤러리2"></div>
+                    <div class="swiper-slide"><img src="./images/sub/bn_brazil.png" alt="갤러리3"></div>
+                    <div class="swiper-slide"><img src="./images/sub/bn_cold.png" alt="갤러리4"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 첫번째 영역 -->
+    <div class="box1">
+        <div class="box1_text">
+            <h1><span class="highlight">이지푸어 정기배송</span></h1>
+            <img src="./images/sub/box1_ani.png" alt="ani" class="jello-horizontal">
+            <p>내가 원하는대로 주문하고<br>내가 원하는 날짜에 받아보는 <br>간편한 원두 구독</p>
+        </div>
+        <img src="./images/sub/box1.png" alt="box1">
+    </div>
+
+    <!-- 두번째 폼태그 영역 -->
+    <div class="formdeco">
+        <div class="subform">
+
+            <form action="post" class="formtag">
+
+                <table>
+                    <tr>
+                        <th>성함</th>
+                        <td><input type="text" class="text"></td>
+                        <th>원두 종류</th>
+                        <td>
+                            <div class="select_cus">
+                                <input type="hidden" class="opt_val" value="">
+                                <div class="trigger">
+                                    <span class="trigger_txt">옵션을 선택해주세요.</span>
+                                </div>
+                                <ul class="option">
+
+                                    <li data-value="option1">케냐 AA</li>
+                                    <li data-value="option2">브라질 옐로우 버번</li>
+                                    <li data-value="option3">과테말라</li>
+                                    <li data-value="option4">에티오피아</li>
+                                    <li data-value="option5">콜롬비아</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>연락처</th>
+                        <td><input type="text" class="text"></td>
+                        <th>로스팅</th>
+                        <td>
+                            <div class="select_cus">
+                                <input type="hidden" class="opt_val" value="">
+                                <div class="trigger">
+                                    <span class="trigger_txt">옵션을 선택해주세요.</span>
+                                </div>
+                                <ul class="option">
+
+                                    <li data-value="option1">라이트 로스팅</li>
+                                    <li data-value="option2">미디엄 로스팅</li>
+                                    <li data-value="option3">미디엄 다크 로스팅</li>
+                                    <li data-value="option4">다크 로스팅</li>
+                                    <li data-value="option5">풀 로스팅</li>
+                                    <li data-value="option5">직접 입력 (주문메세지란에 기입)</li>
+
+                                </ul>
+                            </div>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>주소</th>
+                        <td><input type="text" class="text"></td>
+                        <th>구독 시작일</th>
+                        <td>
+                            <input type="date" id="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>주문 메세지</th>
+                        <td>
+                            <input type="text" class="text">
+                        </td>
+                        <th>추가 상품</th>
+                        <td>
+                            <div class="select_cus">
+                                <input type="hidden" class="opt_val" value="">
+                                <div class="trigger">
+                                    <span class="trigger_txt">옵션을 선택해주세요.</span>
+                                </div>
+                                <ul class="option">
+                                    <li data-value="option0">없음</li>
+                                    <li data-value="option1">이지푸어 시그니처 블랜딩</li>
+                                    <li data-value="option2">More Easily MUG</li>
+                                    <li data-value="option3">이지푸어 COLD BREW</li>
+                                    <li data-value="option4">이지푸어 바리스타 세트</li>
+                                    <li data-value="option5">이지푸어 스페셜티 원두 세트</li>
+                                    <li data-value="option5">이지푸어 드립기물 세트</li>
+                                    <li data-value="option6">이지푸어 라운드넥 T-Shirt</li>
+
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="form_btn">
+                    <input type="reset" value="Reset" class="reset">
+                    <input type="submit" value="Order" class="order">
+                </div>
+            </form>
+        </div>
+        <img src="./images/sub/sub_bg.png" alt="subbg">
+        <ul class="dm">
+            <li class="fade-up me" data-aos="fade-up" data-aos-delay="800"><img src="./images/sub/me1.png" alt="1"></li>
+            <li class="fade-up me" data-aos="fade-up" data-aos-delay="1200"> <img src="./images/sub/me2.png" alt="2"></li>
+            <li data-aos="fade-up" data-aos-delay="1500"> <img src="./images/sub/you1.png" alt="3"></li>
+            <li data-aos="fade-up" data-aos-delay="1900"> <img src="./images/sub/you2.png" alt="4"></li>
+            <li class="fade-up me" data-aos="fade-up" data-aos-delay="2500"> <img src="./images/sub/me3.png" alt="5"></li>
+            <li class="fade-up me" data-aos="fade-up" data-aos-delay="2800"> <img src="./images/sub/me4.png" alt="6"></li>
+            <li data-aos="fade-up" data-aos-delay="3000"> <img src="./images/sub/you3.png" alt="7"></li>
+        </ul>
+    </div>
+    <!-- 세번째 영역 -->
+    <div class="box3">
+        <div class="box3_text">
+            <h1>이지푸어 멤버 가입하면<br>나만의 원두 리스트업이 자동으로!</h1>
+            <p>매번 원두 선택을 해야했던 힘든 구독서비스는 여기까지<br>과거 원두 기록 리스트업으로<br>
+                취향대로 신선하고 빠르게 주문 가능해요</p>
+            <a href="./login_index.html">이지푸어 멤버쉽 가입하기 > </a>
+        </div>
+    </div>
+   
+    <!-- 다섯번째 영역 -->
+    <div class="pointbox">
+        <div class="box5slide">
+            <ul>
+                <li class="prev">
+                    <img src="./images/sub/today.png" alt="today">
+                    <p>이푸가 엄선한 <br>오늘의 원두 </p>
+                </li>
+                <li class="next">
+                    <img src="./images/sub/new.png" alt="new">
+                    <p class="new2">이지푸어<br> NEW</p>
+                </li>
+            </ul>
+            <div class="wrapper">
+                <div class="left">
+                    <img src="./images/sub/box5slide1.png" alt="5-1">
+                    <div class="box5_text">
+                        <h3>EP 블랜딩</h3>
+                        <h2>오렌지 아몬드</h2>
+                        <p>오렌지필의 향긋하고 쌉싸름한 시트러스향과
+                            <br>아몬드 특유의 고소함을 블랜딩한
+                            <br>[오렌지 아몬드] 에디션.
+                        </p>
+
+                        <p> 이지푸어에서 꾸준히 사랑받는
+                            원두입니다.</p>
+
+                        <p>첫맛에서 느껴지는 기분좋은 산미와
+                            <br>부드러운 목넘김이 특징입니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="right">
+
+                    <div class="box5_text2">
+                        <h3>EP MADE</h3>
+                        <h2>More easily MUG</h2>
+                        <p>활용도를 높인
+                            <br>이지푸어 MADE 머그 출시
+                        </p>
+
+                        <p>전자레인지, 식기세척기 사용이 가능한
+                            <br>세라믹머그
+                        </p>
+
+                        <p> 이지푸어의 HIP한 무드를 가득 담아
+                            <br>데스크테리어에도 특화된 디자인.
+                        </p>
+                    </div>
+                    <img src="./images/sub/box5slide2.png" alt="5-2">
+                </div>
+            </div>
+        </div>
+        <img src="./images/sub/circle.png" alt="circle" class="circle animate__tada">
+        <img src="./images/sub/check.png" alt="check" class="check">
+        <img src="./images/sub/star1.png" alt="st1" class="st1 rotate-center">
+        <img src="./images/sub/star2.png" alt="st2" class="st2 rotate-center">
+    </div>
+
+
+     <!-- 네번째 영역 -->
+     <div class="app_ui">
+        <img src="./images/sub/app.png" alt="app ui">
+    </div>
+
+    <!-- 광고배너 슬라이드 -->
+    <div class="swiper bottom">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/sub/banner1.png" alt="b1"></div>
+            <div class="swiper-slide"><img src="./images/sub/banner2.png" alt="b2"></div>
+            <div class="swiper-slide"><img src="./images/sub/banner3.png" alt="b3"></div>
+            <div class="swiper-slide"><img src="./images/sub/banner4.png" alt="b4"></div>
+        </div>
+    </div>
+
+    <!-- 어플 이미지 바꾸세요 -->
+    <a href="./qr_index.html"><img src="./images/applogo.png" alt="app" class="app"></a>
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_in">
+            <div class="footer_b">
+                <h3>이지푸어 정기구독을 이용해보세요.</h3>
+
+                <p>Use Easy Pour's regular coffee subscription.</p>
+                <a href="#" class="orange">구독하기</a>
+            </div>
+            <ul class="footer_logo">
+                <li><img src="./images/logo1.png" alt="logo1"></li>
+                <li><img src="./images/logo2.png" alt="logo2"></li>
+                <li><img src="./images/logo3.png" alt="logo3"></li>
+            </ul>
+
+            <p>Copyright 2024. easypour All right reverved. Busan Ju yujin</p>
+
+            <div class="footer_bottom">
+                <ul class="foooter_text">
+                    <li>대표전화 : 010-1008-2000 (평일 09시-18시) </li>
+                    <li> 주소: (49270) 부산시 서구 이지푸어로스터리</li>
+                    <li>대표자 : 주유진</li>
+                    <li>email : yujin957945@gmail.com</li>
+                </ul>
+
+                <ul class="footer_icon">
+                    <li><a href="#"><img src="./images/icon/instagram.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="./images/icon/twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="./images/icon/youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="./images/icon/facebook.png" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+ <!-- 네비 -->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+ integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+    <!-- 내 js -->
+    <script src="./js/sub.js"></script>
+
+</body>
+
+</html>

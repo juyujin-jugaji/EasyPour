@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EP SHOP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <!-- 내css -->
+    <link rel="stylesheet" href="./css/shop.css">
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+    <link href="./images/icon/icon.png" rel="icon" type="image/png" sizes="32x32">
+</head>
+
+<body>
+    <div class="point">
+        <img src="./images/shop/bg1.png" alt="1">
+        <img src="./images/shop/bg2.png" alt="2">
+    </div>
+    <!-- 헤더 -->
+    <header>
+        <div class="header">
+            <a href="./start_index.html" class="logo"><img src="./images/logo_main.png" alt="logo"></a>
+            <ul>
+                <li class="white"><a href="./index.html">HOME</a></li>
+                <li class="white"><a href="./login_index.html">Login</a></li>
+                <li class="ham-btn">
+                    <a class="menu-trigger" href="#">
+                        <!-- 햄버거 메뉴 -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- (햄버거)네비 -->
+    <div class="ham-con">
+        <ul class="ham-sub-menu">
+            <li>
+                <form class="search-box" action="." method="get">
+                    <input class="search-txt" type="text" placeholder="키워드를 입력하세요.  #오늘의 커피  #머그컵 #원데이 클래스 # 선물세트">
+                    <button class="search-btn" type="submit">
+                        <img src="./images/search.png" alt="search">
+                    </button>
+                </form>
+            </li>
+            <li class="star"><a href="./about_index.html">About.EP</a></li>
+            <li class="star"><a href="./index.html">Home</a></li>
+            <li class="star"><a href="./sub_index.html">EP 구독</a></li>
+            <li class="star"><a href="./shop_index.html">Shop</a></li>
+            <li class="star"><a href="./program_index.html">Program</a></li>
+        </ul>
+    </div>
+
+
+    <!-- 상품 탭 -->
+
+    <div class="text">
+        <h1>EP SHOP</h1>
+        <h3>이지푸어의 모든 상품을 만나보세요.</h3>
+
+    </div>
+
+
+    <div class="folder">
+        <div class="tabs">
+            <button class="tab active z4" onclick="openTab(event, 'tab-1')">
+                <span>All</span>
+            </button>
+            <button class="tab z3" onclick="openTab(event, 'tab-2')">
+                <span>Coffee</span>
+            </button>
+            <button class="tab z2" onclick="openTab(event, 'tab-3')">
+                <span>set</span>
+            </button>
+            <button class="tab z1" onclick="openTab(event, 'tab-4')">
+                <span>md</span>
+            </button>
+        </div>
+        <div class="content">
+            <div class="content__inner" id="tab-1">
+                <div class="page">
+                    <ul class="products">
+                        <li>
+                            <span>EP ROASTING</span>
+                            <img src="./images/shop/p1.png" alt="p1">
+                            <h3>[오늘의 로스팅]
+                                <br>Colombia 외 5종
+                            </h3>
+                            <p>원두 선택 가능</p>
+                            <h4>KRW</h4>
+                            <p class="price">8,500 <span class="small">(100g)</span></p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+
+                        </li>
+                        <li>
+                            <span>EP ROASTING</span>
+                            <img src="./images/shop/p2.png" alt="p2">
+                            <h3>[EP 블렌딩]
+                                <br>오렌지 아몬드
+                            </h3>
+                            <p>오렌지필, 아몬드, 자몽, 브라운슈가</p>
+                            <h4>KRW</h4>
+                            <p class="price">8,500 <span class="small">(100g)</span></p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+                            <span>기획 SET</span>
+                            <img src="./images/shop/p3.png" alt="p3">
+                            <h3>[SET]
+                                <br>EP 바리스타 SET
+                            </h3>
+                            <p>원두(택1종), 드립기물, 머그 SET</p>
+                            <h4>KRW</h4>
+                            <p class="price">45,000 </p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+                            <span>기획 SET</span>
+                            <img src="./images/shop/p4.png" alt="p4">
+                            <h3>[SET]
+                                <br>오늘의 원두 SET
+                            </h3>
+                            <p>매주 선정되는 오늘의 원두 3종으로 구성</p>
+                            <h4>KRW</h4>
+                            <p class="price">30,000 </p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                    </ul>
+                    <ul class="products">
+                        <li>
+
+                            <img src="./images/shop/p5.png" alt="p5">
+                            <h3>[EP MADE]
+                                <br>More Easily MUG
+                            </h3>
+                            <p>이지푸어 감성을 담은 세라믹 머그</p>
+                            <h4>KRW</h4>
+                            <p class="price">11,500 </p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+
+                            <img src="./images/shop/p6.png" alt="p6">
+                            <h3>[EP MADE]
+                                <br>I'M EP 라운드넥 T-shirt
+                            </h3>
+                            <p>30수 원단으로 부드러운 라운드넥 반팔</p>
+                            <h4>KRW</h4>
+                            <p class="price">18,000</p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+                            <img src="./images/shop/p7.png" alt="p7">
+                            <h3>[EP MADE]
+                                <br> EP 냅킨 (2종)
+                            </h3>
+                            <p>형광물질ZERO. 위생과 감성까지 </p>
+                            <h4>KRW</h4>
+                            <p class="price">9,800 <span class="small">1box(100sheet) </span></p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+                            <span>NEW</span>
+                            <img src="./images/shop/p8.png" alt="p8 ">
+                            <h3>[NEW]
+                                <br>EP COLD BREW
+                            </h3>
+                            <p>콜드브루 출시! 550ml로 맛부터 가성비까지</p>
+                            <h4>KRW</h4>
+                            <p class="price">7,000<span class="small">(1can) </span> </p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="content__inner" id="tab-2">
+                <div class="page">
+                    <ul class="products">
+                        <li>
+                            <span>EP ROASTING</span>
+                            <img src="./images/shop/p1.png" alt="p1">
+                            <h3>[오늘의 로스팅]
+                                <br> 콜롬비아 게이샤(Colombia Geisha)
+                            </h3>
+                            <p>초콜릿, 캐러멜, 견과류, 사과, 베리류</p>
+                            <h4>KRW</h4>
+                            <p class="price">11.000 <span class="small">(100g)</span></p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+
+                        </li>
+                        <li>
+                            <span>EP ROASTING</span>
+                            <img src="./images/shop/gua.png" alt="p2">
+                            <h3>[오늘의 로스팅]
+                                <br>과테말라 안티구아 (Guatemala Antigua)
+                            </h3>
+                            <p>초콜릿, 스모크, 말린 과일(자두, 체리)</p>
+                            <h4>KRW</h4>
+                            <p class="price">8,500 <span class="small">(100g)</span></p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+                            <span>기획 SET</span>
+                            <img src="./images/shop/brazil.png" alt="p3">
+                            <h3>[오늘의 로스팅]
+                                <br>브라질 옐로우 버번 (Brazil Yellow Bourbon)
+                            </h3>
+                            <p>헤이즐넛, 초콜릿, 캐러멜, 감귤류</p>
+                            <h4>KRW</h4>
+                            <p class="price">8,000 </p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+                            <span>기획 SET</span>
+                            <img src="./images/shop/ethio.png" alt="p4">
+                            <h3>[오늘의 로스팅]
+                                <br>에티오피아 예가체프 (Ethiopia Yirgacheffe)
+                            </h3>
+                            <p> 자스민, 레몬, 베리류(블루베리, 라즈베리), 플로럴</p>
+                            <h4>KRW</h4>
+                            <p class="price">9,500<span class="small">(100g)</span> </p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                    </ul>
+                    <ul class="products">
+                        <li>
+                            <img src="./images/shop/kenya.png" alt="p5">
+                            <h3>[오늘의 로스팅]
+                                <br>케냐 AA (Kenya AA)
+                            </h3>
+                            <p>베리류(블랙커런트), 감귤류, 와인</p>
+                            <h4>KRW</h4>
+                            <p class="price">9,000<span class="small">(100g)</span> </p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+
+                            <img src="./images/shop/p2.png" alt="p6">
+                            <h3>[EP 블랜딩]
+                                <br>오렌지 아몬드 (Orange Almond)
+                            </h3>
+                            <p>오렌지필, 아몬드, 자몽, 브라운슈가</p>
+                            <h4>KRW</h4>
+                            <p class="price">8,500<span class="small">(100g)</span></p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+                            <span>NEW</span>
+                            <img src="./images/shop/p8.png" alt="p8 ">
+                            <h3>[NEW]
+                                <br>EP COLD BREW
+                            </h3>
+                            <p>콜드브루 출시! 550ml로 맛부터 가성비까지</p>
+                            <h4>KRW</h4>
+                            <p class="price">7,000<span class="small">(100g)</span></p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="content__inner" id="tab-3">
+                <div class="page">
+                    <ul class="products">
+                        <li>
+                            <span>기획 SET</span>
+                            <img src="./images/shop/p3.png" alt="p3">
+                            <h3>[SET]
+                                <br>EP 바리스타 SET
+                            </h3>
+                            <p>원두(택1종), 드립기물, 머그 SET</p>
+                            <h4>KRW</h4>
+                            <p class="price">45,000 </p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+                            <span>기획 SET</span>
+                            <img src="./images/shop/p4.png" alt="p4">
+                            <h3>[SET]
+                                <br>오늘의 원두 SET
+                            </h3>
+                            <p>매주 선정되는 오늘의 원두 3종으로 구성</p>
+                            <h4>KRW</h4>
+                            <p class="price">30,000 </p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content__inner" id="tab-4">
+                <div class="page">
+                    <ul class="products">
+                        <li>
+
+                            <img src="./images/shop/p5.png" alt="p5">
+                            <h3>[EP MADE]
+                                <br>More Easily MUG
+                            </h3>
+                            <p>이지푸어 감성을 담은 세라믹 머그</p>
+                            <h4>KRW</h4>
+                            <p class="price">11,500 </p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+
+                            <img src="./images/shop/p6.png" alt="p6">
+                            <h3>[EP MADE]
+                                <br>I'M EP 라운드넥 T-shirt
+                            </h3>
+                            <p>30수 원단으로 부드러운 라운드넥 반팔</p>
+                            <h4>KRW</h4>
+                            <p class="price">18,000</p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li>
+                            <img src="./images/shop/p7.png" alt="p7">
+                            <h3>[EP MADE]
+                                <br> EP 냅킨 (2종)
+                            </h3>
+                            <p>형광물질ZERO. 위생과 감성까지 </p>
+                            <h4>KRW</h4>
+                            <p class="price">9,800 <span class="small">1box(100sheet) </span></p>
+                            <button class="btn" onclick="toggleAct(this)">+</button>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- faq -->
+        <div class="box">
+            <img src="./images/shop/faq.png" alt="faq" class="faq jello-horizontal">
+            <ul class="q_a">
+                <li>
+                    <h2><img src="./images/shop/faq1.png" alt="f1">구매 후 배송까지 얼마나 걸리나요?</h2>
+                    <div>
+                        <p><span class="bold">A.</span> 신선도를 위해 주문 후 로스팅을 시작합니다. 로스팅 후 배송까지 3-4일 소요됩니다. ( 토/일/공휴일 제외 )
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <h2><img src="./images/shop/faq2.png" alt="f2">배송 주기를 어떻게 설정하나요?</h2>
+                    <div>
+                        <p><span class="bold">A.</span> 원두는 주간, 격주, 월간 단위로 배송 주기를 설정할 수 있습니다. 고객님의 소비 패턴에 맞춰 설정을 변경하실 수
+                            있으며, 마이페이지에서 손쉽게 수정 가능합니다.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <h2><img src="./images/shop/faq3.png" alt="f3">구독을 일시 중지할 수 있나요?</h2>
+                    <div>
+                        <p><span class="bold">A:</span> 네, 구독 서비스는 일시 중지가 가능합니다. 휴가나 일정 변경 등으로 구독을 잠시 멈추고 싶으시면 마이페이지에서
+                            일시 중지 기능을 이용해주세요.</p>
+                    </div>
+                </li>
+                <li>
+                    <h2><img src="./images/shop/faq4.png" alt="f4">원두 신선도는 어떻게 보장되나요?</h2>
+                    <div>
+                        <p><span class="bold">A.</span> 저희는 주문 후 바로 원두를 로스팅하여 배송하기 때문에, <br>고객님께서는 항상 신선한 상태의 원두를 받아보실 수
+                            있습니다.
+                            <br>또한, 포장 시 산소 차단 패키지를 사용해 신선도를 최대한 유지하고 있습니다.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <h2><img src="./images/shop/faq5.png" alt="f5">배송비는 어떻게 되나요?</h2>
+                    <div>
+                        <p><span class="bold">A. </span>구독 서비스의 배송비는 별도로 부과되지 않습니다. 모든 구독 패키지는 무료로 배송되며,<br> 추가 비용 없이
+                            신선한 원두를 받아보실 수 있습니다.
+                            <br>단, 구독 서비스 외 단품구매시 배송비가 추가될 수 있습니다.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 어플 이미지 바꾸세요 -->
+        <a href="./qr_index.html"><img src="./images/applogo.png" alt="app" class="app"></a>
+    </div>
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_in">
+            <div class="footer_b">
+                <h3>이지푸어 정기구독을 이용해보세요.</h3>
+
+                <p>Use Easy Pour's regular coffee subscription.</p>
+                <a href="#" class="orange">구독하기</a>
+            </div>
+            <ul class="footer_logo">
+                <li><img src="./images/logo1.png" alt="logo1"></li>
+                <li><img src="./images/logo2.png" alt="logo2"></li>
+                <li><img src="./images/logo3.png" alt="logo3"></li>
+            </ul>
+
+            <p>Copyright 2024. easypour All right reverved. Busan Ju yujin</p>
+
+            <div class="footer_bottom">
+                <ul class="foooter_text">
+                    <li>대표전화 : 010-1008-2000 (평일 09시-18시) </li>
+                    <li> 주소: (49270) 부산시 서구 이지푸어로스터리</li>
+                    <li>대표자 : 주유진</li>
+                    <li>email : yujin957945@gmail.com</li>
+                </ul>
+
+                <ul class="footer_icon">
+                    <li><a href="#"><img src="./images/icon/instagram.png" alt="insta"></a></li>
+                    <li><a href="#"><img src="./images/icon/twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="./images/icon/youtube.png" alt="youtube"></a></li>
+                    <li><a href="#"><img src="./images/icon/facebook.png" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 네비 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script><!-- 제이쿼리 라이브러리,수정X -->
+    <script src="./js/shop.js"></script>
+</body>
+
+</html>

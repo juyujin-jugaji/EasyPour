@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인/회원가입</title>
+
+
+    <!-- 내 css -->
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+    <link href="./images/icon/icon.png" rel="icon" type="image/png" sizes="32x32">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="./start_index.html" class="logo"><img src="./images/logo_main.png" alt="logo"></a>
+            <ul>
+                <li class="white"><a href="./index.html">HOME</a></li>
+                <li class="white"><a href="./login_index.html">Login</a></li>
+                <li class="ham-btn">
+                    <a class="menu-trigger" href="#">
+                        <!-- 햄버거 메뉴 -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- (햄버거)네비 -->
+    <div class="ham-con">
+        <ul class="ham-sub-menu">
+            <li>
+                <form class="search-box" action="." method="get">
+                    <input class="search-txt" type="text" placeholder="키워드를 입력하세요.  #오늘의 커피  #머그컵 #원데이 클래스 # 선물세트">
+                    <button class="search-btn" type="submit">
+                        <img src="./images/search.png" alt="search">
+                    </button>
+                </form>
+            </li>
+            <li class="star"><a href="./about_index.html">About.EP</a></li>
+            <li class="star"><a href="./index.html">Home</a></li>
+            <li class="star"><a href="./sub_index.html">EP 구독</a></li>
+            <li class="star"><a href="./shop_index.html">Shop</a></li>
+            <li class="star"><a href="./program_index.html">Program</a></li>
+        </ul>
+    </div>
+
+
+
+
+<!-- 로그인창 -->
+    <div class="wrap">
+        <img src="./images/login/tape.png" alt="tape">
+        <div class="login">
+            <h2>With. EasyPour</h2>
+            <ul class="login_sns">
+                <li><a href=""><img src="./images/program/google.png" alt="google"></a></li>
+                <li><a href=""><img src="./images/program/kakao.png" alt="kakao"></a></li>
+                <li><a href=""><img src="./images/program/naver.png" alt="naver"></a></li>
+            </ul>
+            <div class="login_id">
+                <h4>E-mail</h4>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="login_pw">
+                <h4>Password</h4>
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="login_etc">
+                <div class="checkbox">
+                    <input type="checkbox"> Remember Password?
+                </div>
+                <div class="forgot_pw">
+                    <a href="">Forgot Password?</a>
+                </div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="회원가입">
+                <input type="submit" value="로그인">
+
+            </div>
+        </div>
+    </div>
+    <!-- 네비 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
