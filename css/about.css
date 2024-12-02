@@ -383,7 +383,7 @@ width: 100%;
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
-    padding: 150px 60px 50px 60px;
+    padding: 100px 60px 50px 60px;
 
     position: relative;
 }
@@ -394,6 +394,7 @@ width: 100%;
     bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 40;
     
 }
 .skip:hover{
@@ -451,7 +452,8 @@ width: 100%;
 .box2{
     width: 100%;
     overflow: hidden;
-    margin: auto;
+    margin:  auto;
+    padding-top: 100px;
 position: relative;
 }
 
